@@ -1,6 +1,42 @@
-*, *::before, *::after {
+:root {
+    font-size: 10px;
+}
+* {
     box-sizing: border-box;
 }
 * {
     margin: 0;
+}
+.header {
+    background-color: #808000;
+    height: 8rem;
+    border-bottom: .5rem solid black;
+}
+.main {
+    width: 100%;
+    height: calc(100vh - 8rem);
+    display: flex;
+    flex-direction: column;
+    background-color: #008000;
+}
+.container__left {
+    width: 100%;
+}
+@media screen and (min-width: 583px) {
+    .main {
+        flex-direction: row;
+    }
+    .container__right {
+        min-width: 30%;
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+    .container__left {
+        display: flex;
+    }
+    .container__left div {
+        width: 50%;
+    }
 }
