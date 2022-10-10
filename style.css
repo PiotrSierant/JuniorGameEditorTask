@@ -26,8 +26,10 @@
 .container__right {
     min-width: 100%;
     display: flex;
-    border: 1px solid black;
     height: 100%;
+    margin-top: 1rem;
+    padding-left: 4rem;
+    padding-bottom: 2rem;
 }
 .square__container {
     padding: 0 5rem;
@@ -66,6 +68,16 @@
     width: 7rem;
     height: 7rem;
 }
+.container__right div {
+    background-color: #0000FF;
+    min-width: 18rem;
+}
+.container__right div p {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 5rem;
+    margin-top: 2rem;
+}
 @media screen and (min-width: 583px) {
     .main {
         flex-direction: row;
@@ -73,8 +85,12 @@
     .container__right {
         min-width: 30%;
         align-items: stretch;
+        justify-content: flex-end;
+        padding-right: 5rem;
     }
-
+    .container__right div {
+        background-color: #C83737;
+    }
 }
 
 @media screen and (min-width: 900px) {
@@ -85,57 +101,7 @@
     .container__left .lineAndCircle__container {
         width: 50%;
     }
+    .container__right div {
+        background-color: #FFFFFF;
+    }
 }
-
-/*.container__square div {*/
-/*    width: 10rem;*/
-/*    height: 10rem;*/
-/*    background-color: #FF0000;*/
-/*    transform: rotate(45deg);*/
-/*    border: .5rem solid black;*/
-/*}*/
-/*.container__square div:nth-child(1) {*/
-/*    transform: translateY(100%) rotate(45deg);*/
-/*}*/
-/*.container__circleAndLine {*/
-/*    width: 100%;*/
-/*    padding: 1rem;*/
-/*    display: flex;*/
-/*    gap: 4rem;*/
-/*}*/
-/*.container__line {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    gap: 4rem;*/
-/*}*/
-/*.line {*/
-/*    width: 15rem;*/
-/*    height: 2rem;*/
-/*    background-color: #0000CB;*/
-/*    border: .5rem solid black;*/
-/*}*/
-/*.circle {*/
-/*    width: 10rem;*/
-/*    background-color: #008080;*/
-/*    border-radius: 50%;*/
-/*    border: .5rem solid black;*/
-/*}*/
-/*.container__block {*/
-/*    width: 100%;*/
-/*    padding-left: 8rem;*/
-/*    margin-bottom: 1rem;*/
-/*}*/
-/*.container__block div {*/
-/*    width: 18rem;*/
-/*    min-height: 30rem;*/
-/*    background-color: #0000CB;*/
-/*    border: .5rem solid black;*/
-/*}*/
-
-/*@media screen and (min-width: 583px) {*/
-/*    .main {*/
-/*        flex-direction: row;*/
-/*        padding: 0;*/
-/*    }*/
-/*}*/
-
