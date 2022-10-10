@@ -44,6 +44,12 @@
     transform: rotate(45deg);
     border: .3rem solid black;
 }
+.rotate {
+    animation: 2s rotate ease-in-out infinite;
+}
+.scale {
+    animation: 2s scale ease-in-out infinite;
+}
 .lineAndCircle__container {
     width: 100%;
     margin-top: 3rem;
@@ -103,5 +109,25 @@
     }
     .container__right div {
         background-color: #FFFFFF;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
     }
 }
